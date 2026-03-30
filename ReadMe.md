@@ -10,13 +10,13 @@ Below you’ll find instructions to copy (fork) this repository and set it up fo
 
 ## STEP 01
 
-To Setup Your Code and Live Site (GitHub and GitHub Pages) first **sign in or create a new GitHub account** if you do not already have one
+To Setup Your Code and Live Site (GitHub and GitHub Pages) first **sign in or create a new GitHub account** if you do not already have one.
 
 ### Fork the Example Repository ("Repo")
 
 1. Once logged in, go to the [Example Code Repo](https://github.com/sheiva/aframe-starter-pack): https://github.com/sheiva/aframe-starter-pack
-2. click **Fork** in the top right corner.
-* This makes your own copy of the example repo that you can edit freely
+2. Click **Fork** in the top right corner.
+> *This makes your own copy of the example repo that you can edit freely*
 
 
 ### Publish Your Live A-Frame Site
