@@ -6,33 +6,36 @@
   <body>
     <a-scene>
       <a-assets>
-        <a-asset-item id="tree" src="Assets/tree.obj"></a-asset-item>
-        ><a-asset-item id="tree-mtl" src="Assets/materials.mtl"></a-asset-item>
+        <a-asset-item id="forest" src="Assets/Forest.glb"></a-asset-item>
 
-        <a-asset-item id="monarch" src="Assets/monarch"></a-asset-item>
         <a-asset-item id="butterfly" src="Assets/butterfly.glb"></a-asset-item>
-        <a-assets-item id="bee" src="Assets/bee"></a-assets-item>
+        <a-asset-item id="bear" src="Assets/bear.glb"></a-asset-item>
 
         <img id="sky" src="Assets/sky.jpg">
-        <img id="ground" src="Assets/ground.png">
+        <img id="ground" src="Assets/ground.jpg">
       </a-assets>
 
       <a-sky src="#sky"></a-sky>
 
-      <a-text value="Friends of the Forest" position="0 5 -8" width="20"></a-text>
-      <a-plane ssrc="#ground" rotation="-90 0 0" height="100" width="100" repeat="50 50">></a-plane>
+      <a-text value="Friends of the Forest" position="-4 5 -8" width="20"></a-text>
+      <a-plane src="#ground" rotation="-90 0 0" height="100" width="100" repeat="50 50"></a-plane>
 
-      <a-obj-model src="#tree" mtl="tree-mtl" position="-5 0 -10" scale="0.4 0.4 0.4"></a-obj-model>
-      <a-obj-model src="#tree" position="3 0 -12" scale="0.5 0.5 0.5"></a-obj-model>
-      <a-obj-model src="#tree" position="0 0 -15" scale="0.6 0.6 0.6"></a-obj-model>
+      <a-entity gltf-model="#forest" position="-6 2 -12" scale="5 5 5 "></a-entity>
+      <a-entity gltf-model="#forest" position="8 2 -12" scale="5 5 5"></a-entity>
+      <a-entity gltf-model="#forest" position="6 2 12" scale="5 5 5"></a-entity>
+      <a-entity gltf-model="#forest" position="-4 2 10" scale="5 5 5"></a-entity>
+      <a-entity gltf-model="#forest" position="-12 2 0" rotation="0 90 0" scale="5 5 5"></a-entity>
+      <a-entity gltf-model="#forest" position="12 2 0" rotation="0 -90 0" scale="5 5 5"></a-entity>
 
-      <a-entity gltf-model="#butterfly" position="0 2 -5" scale="0.01 0.01 0.01" animation="property: position; to: 2 3 -6; dir: alternate; loop: true; dur: 3000" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000"></a-entity>
-      <a-entity gltf-model="#butterfly" position="-1 2 -4" scale="0.03 0.03 0.03" animation="property: position; to: -1 2 -5; dir: alternate; loop: true; dur: 2500"></a-entity>
+      <a-entity gltf-model="#butterfly" position="0 2 -4" scale="0.04 0.04 0.04" animation="property: position; to: 2 3 -6; dir: alternate; loop: true; dur: 3000" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000"></a-entity>
+      <a-entity gltf-model="#butterfly" position="-1 2 -5" scale="0.03 0.03 0.03" animation="property: position; to: 0 2 -4; dir: alternate; loop: true; dur: 2500"></a-entity>
+      <a-entity gltf-model="#butterfly" position="-6 2 -2" scale="0.03 0.03 0.03" animation="property: position; to: -5 2 -3; dir: alternate; loop: true; dur: 3000" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000"></a-entity>
+
+      <a-entity gltf-model="#bear" position="0 0.5 8" scale="0.01 0.01 0.01" rotation="0 270 0"></a-entity>
+      <a-entity gltf-model="#bear" position="6 0 0" scale="0.01 0.01 0.01" rotation="0 -9 0"></a-entity>
 
       <a-light type="ambient" color="#555"></a-light>
       <a-light type="point" color="#88ff88" intensity="2" position="0 3 -5"></a-light>
-
-      <a-camera position="0 1.6 2"> <a-cursor></a-cursor> </a-camera>
 
     
     </a-scene>
